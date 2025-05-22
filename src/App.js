@@ -48,12 +48,14 @@ function App() { //Componente funcional
       direccion:"10 de Agosto y Orellana",
       tipo:"Cafeteria",
       imagen:"https://imagenes.primicias.ec/files/main_image_832_468/uploads/2024/05/26/66539bf3ba20b.jpeg"
+      
     },
     {
       nombre:"El Buen Sabor",
         direccion:"Av. Amazonas y Naciones Unidas",
         tipo:"Internacional",
         imagen:"https://imagenes.primicias.ec/files/main_image_832_468/uploads/2024/05/26/66539bf3ba20b.jpeg"
+        
 
     },
     {
@@ -61,12 +63,14 @@ function App() { //Componente funcional
         direccion:"Orellana y Colon",
         tipo:"Grill",
         imagen:"https://imagenes.primicias.ec/files/main_image_832_468/uploads/2024/05/26/66539bf3ba20b.jpeg"
+      
     },
     {
       nombre:"Las Vegas",
         direccion:"Av.Shyris",
         tipo:"Tradicional",
         imagen:"https://imagenes.primicias.ec/files/main_image_832_468/uploads/2024/05/26/66539bf3ba20b.jpeg"
+        
     }
 
   ];
@@ -78,6 +82,8 @@ function App() { //Componente funcional
           direccion={restaurante.direccion}
           tipo={restaurante.tipo}
           imagen={restaurante.imagen}
+          key={restaurante.nombre} //clave unica para cada restaurante
+          
         />
       ))}
     </div>
